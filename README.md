@@ -13,7 +13,7 @@ Project swagGen.js
 
 //TODO 
 -Make better parsing rules so the resultant strings always make sense/are humourous
--Beautify the code (less repetetion etc)
+-Beautify the code (less repetition etc)
 
 
 ======
