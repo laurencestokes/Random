@@ -24,7 +24,7 @@
 		var result = "";
 		
 		//iterate through the arrays 3 times to construct a random swagName.
-		for (var i = 0; i < 3; i++)
+		for (var i = 0; i <= 2; i++)
 			{	
 			if(i == 0){
 				//extract a random swag name from array1 to append to result
