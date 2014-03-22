@@ -1,6 +1,7 @@
 /* ========================================================================
  * Swag Name Generator: v 1.1
  * http://www.swagnamegenerator.com (not live)
+ * Designed to satirise the stupid names you find in online gaming (LoL, DotA etc)
  * ========================================================================
  * Copyright 2014 Laurence Stokes
  * Licensed under MIT 
