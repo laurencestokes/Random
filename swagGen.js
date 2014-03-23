@@ -22,27 +22,29 @@
 		
 		//result string
 		var result = "";
+		//curent swag word string
+		var swag = "";
 		
 		//iterate through the arrays 3 times to construct a random swagName.
 		for (var i = 0; i <= 2; i++)
 			{	
-			if(i == 0){
+			if(i === 0){
 				//extract a random swag name from array1 to append to result
-				var swag = mySwagArray1[Math.floor(Math.random()*mySwagArray1.length)];
+				swag = mySwagArray1[Math.floor(Math.random()*mySwagArray1.length)];
 				//append extracted name to result (result is empty so there can't be a string collision at this point)
 				result = result + " " + swag;
-			}else if(i==1){
+			}else if(i===1){
 				//extract a random swag name from array2 to append to result
-				var swag = mySwagArray2[Math.floor(Math.random()*mySwagArray2.length)];
+				swag = mySwagArray2[Math.floor(Math.random()*mySwagArray2.length)];
 				//append extracted name to result if it's not already in result
 				if (result.indexOf(swag) > -1) {
 					i--;
 				} else {
 					result = result + " " + swag;
 				}
-			}else if(i ==2){
+			}else if(i === 2){
 				//extract a random swag name from array3 to append to result
-				var swag = mySwagArray3[Math.floor(Math.random()*mySwagArray3.length)];
+				swag = mySwagArray3[Math.floor(Math.random()*mySwagArray3.length)];
 				//append extracted name to result if it's not already in result
 				if (result.indexOf(swag) > -1) {
 					i--;
