@@ -8,7 +8,7 @@
  * ======================================================================== */
 
 	//Set up Global Variables (the swag name arrays)
-
+	//These would normally be different. Certain strings can only be at the start (# etc)
 	var mySwagArray1 = ["swag","yolo", "420", "blaseit", "fgt", "cool", "hipster", "overload", "2k14", "cunt", "destroyer", "arseface", "XxX", "pimping", "tupac"];
 	var mySwagArray2 = ["swag","yolo", "420", "blaseit", "fgt", "cool", "hipster", "overload", "2k14", "cunt", "destroyer", "arseface", "XxX", "pimping", "tupac"];
 	var mySwagArray3 = ["swag","yolo", "420", "blaseit", "fgt", "cool", "hipster", "overload", "2k14", "cunt", "destroyer", "arseface", "XxX", "pimping", "tupac"];
