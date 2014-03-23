@@ -18,7 +18,7 @@
 	function genName(){
 		
 		//html element to update the result to
-		var elementToUpdate = "header"
+		var elementToUpdate = "header";
 		
 		//result string
 		var result = "";
