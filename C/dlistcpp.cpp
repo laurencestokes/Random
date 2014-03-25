@@ -22,6 +22,10 @@ public:
 	void append(T);
 	void push(T);
 	void pop();
+	bool contains(T);
+	void drop(T);
+	void reverse();
+	void clone();
 };
 
 template<class T> 
