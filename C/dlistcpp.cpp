@@ -34,6 +34,29 @@ public:
 };
 
 template<class T> 
+void doublylinkedlist<T>::createlist(T x[])
+	
+	if(x == NULL){
+		cout<<"Input Array is Empty"<<endl;
+		return;
+	}
+	int arrLength = sizeof(x)/sizeof(x[0]); //get size of array passed into initial list
+	node *q; 
+	node *p=new node; //create first node
+	node p->data=x[0]; //first element of array argument passed is data for first node
+	p->next=NULL; 
+	p->prev=NULL; 
+	for(int i=1;i<arrLength;i++) { //loop through for as many items as there are in the input array
+		q=p; 
+		p=p->next=new node; 
+		p->data=x[i]; 
+		p->next=NULL; 
+		p->prev=q; 
+	} 
+	tail=p; 
+} 
+
+template<class T> 
 void doublylinkedlist<T>::append(T item)
 { 
 	node *p=new node; //create a pointer to a new node to append to the list
