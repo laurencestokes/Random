@@ -3,6 +3,7 @@
 
 //TODO: (Constructor that builds list?)
 
+
 #include <iostream>
 
 using namepsace std;
@@ -102,7 +103,7 @@ void doublylinkedlist<T>::drop(T item)
 }
 
 template<class T>
-int doublylinkedlist<T>::size();
+int doublylinkedlist<T>::size()
 {
 	if(head==NULL){
 		cout<<"List is empty"<<endl;
@@ -120,4 +121,22 @@ int doublylinkedlist<T>::size();
 		cout<<"List is "<<count<<" elements long"<<endl;
 	}
 	return count; 
+}
+
+template<class T>
+void doublylinkedlist<T>::clear()
+{
+	if(head==NULL){
+		cout<<"List is empty"<<endl;
+		return;
+	}
+	node *p = new node();
+	p = head;
+	while(p->next != NULL){
+		head = p->next;
+		cout<<"Deleting "<<head->data<<" from list"<<endl;
+		delete(head);
+		p=p->next;
+	}	
+	cout<<"All items deleted"<<endl;
 }
