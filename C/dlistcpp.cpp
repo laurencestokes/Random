@@ -24,6 +24,7 @@ private:
 public:
 	doublylinkedlist(){}
 	
+	void createlist(T []);
 	void append(T);
 	void push(T);
 	void pop();
