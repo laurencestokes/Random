@@ -37,10 +37,19 @@ template<class T>
 void doublylinkedlist<T>::append(T item)
 { 
 	node *p=new node; //create a pointer to a new node to append to the list
-	p->data=item; //set p's data to the item argument
-	p->prev=tail; //set p's previous to the tail of the list T
-	p->next=NULL; //set the next element to NULL
-	tail=p; //set the tail of T to this new node, p, we're appending to the end
+	p->data=item; //set p's data to the item 
+	p->next=NULL;
+	if(head == NULL){
+		p->prev=NULL;
+		head=p;
+	}
+	if(tail == NULL){
+		p->prev=head; //set p's previous to the head of the list T
+	}
+	if(head != NULL && tail != NULL){
+		p->prev=tail;
+		tail=p;
+	}
 }
 
 template<class T> 
@@ -49,7 +58,11 @@ void doublylinkedlist<T>::push(T item)
 	node *p=new node; //create a pointer to a new node to push to start of list
 	p->data=item; //set p's data to the item argument
 	p->prev=NULL; //set p's previous to the NULL
-	p->next=head; //set the next element of p to the current head of list
+	if(head == NULL){
+		p->next=NULL; 
+	}else{
+		p->next=head;
+	}
 	head=p; //set the head of the list to the new node created
 }
 
