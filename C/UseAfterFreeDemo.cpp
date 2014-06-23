@@ -1,7 +1,9 @@
 #include <iostream>
 #include <unistd.h> //provides access to POSIX system APIs
 
-/** Very Simple Use After Free Exploit Demo Code **/
+/** Very Simple Use After Free Exploit Demo Code 
+ * that spawns a shell 
+ **/
 
 using namespace std;
 
