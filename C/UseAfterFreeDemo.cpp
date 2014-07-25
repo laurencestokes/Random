@@ -3,6 +3,8 @@
 
 /** Very Simple Use After Free Exploit Demo Code 
  * that spawns a shell 
+ * To compile using G++: g++ <filename>.cpp -o <outputname> 
+ * To run: ./<outputname>
  **/
 
 using namespace std;
