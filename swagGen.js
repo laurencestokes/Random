@@ -9,9 +9,9 @@
 
 	//Set up Global Variables (the swag name arrays)
 
-	var mySwagArray1 = ["#", "swag","yolo", "420", "blaseit", "fgt", "cool", "hipster", "overload", "2k14", "cunt", "destroyer", "arseface", "XxX", "pimping", "tupac"];
-	var mySwagArray2 = ["swag","yolo", "420", "blaseit", "fgt", "cool", "hipster", "overload", "2k14", "cunt", "destroyer", "arseface", "pimping", "tupac"];
-	var mySwagArray3 = ["swag","yolo", "420", "blaseit", "fgt", "cool", "hipster", "overload", "2k14", "cunt", "destroyer", "arseface", "XxX", "pimping", "tupac"];
+	var mySwagArray1 = ["#", "swag","yolo", "420", "blaseit", , "cool", "hipster", "overload", "2k14", "XxX", "tupac"];
+	var mySwagArray2 = ["swag","yolo", "420", "blaseit",  "cool", "hipster", "overload", "2k14", "XxX", "tupac"];
+	var mySwagArray3 = ["swag","yolo", "420", "blaseit", "cool", "hipster", "overload", "2k14", "XxX", "tupac"];
 	
 	//html element to update the result to
 	var elementToUpdate = "header";
