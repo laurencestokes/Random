@@ -12,6 +12,8 @@
 - Make better parsing rules so the resultant strings always make sense/are humourous
 - Beautify the code (less repetition etc)
 
-## Project x
+## loz.cfg
+
+- My CS:GO Config file. Feel free to use it. (Delete the binds section unless you want to have my keybinds)
 
 ## Project y
