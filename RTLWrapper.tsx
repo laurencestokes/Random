@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent, RenderResult, Queries, RenderOptions } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '@gymshark/utils';
+import { theme } from 'utils';
 import reduce from 'lodash/reduce';
 
 type AdditionalThemes = { [key: string]: unknown }[];
