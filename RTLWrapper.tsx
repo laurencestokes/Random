@@ -33,7 +33,7 @@ const customRender = <T extends {}>(
     additionalThemes: AdditionalThemes = [],
     contextConfigs: ContextConfigs<T>,
 ): RenderResult<Queries, HTMLElement> => {
-    // Wipe before assignment to avoid pollution using global vars at
+    // Wipe before assignment to avoid global scope pollution
     themes = [];
     configs = [];
     // Reassign to function params
@@ -45,5 +45,5 @@ const customRender = <T extends {}>(
 
 export * from '@testing-library/react';
 
-// Override render method - rexporting screen and fireEvent as a stop gap solution
+// Override render method - rexporting screen and fireEvent
 export { customRender as render, screen, fireEvent };
